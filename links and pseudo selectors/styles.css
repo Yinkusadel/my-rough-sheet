@@ -1,0 +1,195 @@
+/*                    HOVER - TO CHANGE ELEMENTS COLOR WHEN THE CURSOR IS ON IT                          */
+
+/* to style an element when you hover on it */
+h1:hover {
+    color:blue;
+}
+/* to style an element when you hover on it */
+
+/*                    HOVER - TO CHANGE ELEMENTS COLOR WHEN THE CURSOR IS ON IT     END                     */
+
+
+
+
+
+
+
+
+/*                          TO STYLE LINKS(a)                         */
+
+/* to style a link ( :link=when not visted ) ( :linked=when visited ) */
+  #twitterprofile:link {
+    color: green;
+}
+
+#twitterprofile:visited {
+    color: red;
+} 
+/* to style a link ( :link=when not visted ) ( :linked=when visited ) */
+
+/*                          TO STYLE LINKS(a)       END                  */
+
+
+
+
+
+
+
+/*                           ADVANCE SELECTOR                              */
+
+/* this styles any a element directly below div */
+div + a {
+    color: aqua;
+}
+/* this styles any a element directly below div */
+
+
+/* this styles the span element directly below or beside p (has to be same parent)*/
+p ~ span {
+    color: blue;
+}
+/* this styles the span element directly below or beside p (has to be same parent)*/
+
+
+/* to style a number of an elements child  eg (first-child , :last-child , :nth-child()*/
+ li:nth-child(1) {
+    color: green;
+} 
+/* to style a number of an elements child eg (first-child , :last-child , :nth-child()*/
+
+
+/*                               TO DIRECTLY STYLE CHILD ELEMENTS                                   */
+
+
+
+
+/*                               TO DIRECTLY STYLE CHILD ELEMENTS                                   */
+
+
+
+/*                           ADVANCE SELECTOR           END                   */
+
+
+
+
+
+
+
+
+
+/*                                      COLOR GRADIENTS     E.G  property: linear-gradient(direction, color, color,);               */
+
+/* LINEAR GRADIENT - t make color change from one to another  */
+.linear-gradient {
+    background: linear-gradient(to right, blue, green);
+    width: 100PX;
+    height: 100px;
+}
+/* GRADIENT - t make color change from one to another  END  */
+
+
+
+/* RADIal GRADIENT radial-gradient(circle, red 30%, black 40%, yellow 50%); */
+.radial-gradient {
+    background: radial-gradient(red 30%, black 40%, yellow 50%);
+    width: 200PX;
+    height: 200px;
+}
+/* RADIal GRADIENT */
+
+/*                                END      COLOR GRADIENTS     E.G  property: linear-gradient(direction, color, color,);               */
+
+
+
+
+
+
+/*                  FONTS                              */
+/* san-serif - very easy to read */
+.sans-serif {
+    font-family: sans-serif;
+}
+/* san-serif - very easy to read */
+/*                END  FONTS                              */
+
+
+
+
+
+/*     WIDTH AND HEIGHT        FOR height USE (absolute unit e.g px)        FOR width USE (relative unit e.g vw , %)   */
+.width-n-height {
+    width: 60vw;
+    height: 100px;
+    background: black;
+
+}
+
+/*    EMD  WIDTH AND HEIGHT        FOR height USE (absolute unit e.g px)        FOR width USE (relative unit e.g vw , %)   */
+
+
+
+
+/*                        BORDER                       */
+/*      shorthand value .......... border:size style color; */
+.border{
+    border: 2px solid rgb(123, 232, 115);
+    width: 40vw;
+    height: 150px;
+}
+/*                      END  BORDER                       */
+
+
+
+
+
+
+/*                           GRID                         */
+/* HINTS */
+/* display:grid; */
+/* grid-template-columns:then select the values each items in (px) ..confused check css zero to hero 4rs 15min ; this sizes down the grid container of an item*/
+/* grid-template-rows:then select the values each items in (px) ..confused check css zero to hero 4rs 15min ; this sizes grid container of an item row */
+/* template value auto gives equal space between tge items */
+/* grid-gap:row column; */
+/* HINTS */
+
+.grid-container {
+    background: rgb(240, 227, 227);
+    margin: 10px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    /* justify-content: space-evenly;
+    align-content: space-between;
+    grid-gap: 300px 150px; */
+}
+
+.grid-item {
+    font-size: 25px;
+    text-align: center;
+    width: 70px;
+    line-height: 40px;
+    margin: 10px;
+}
+
+
+
+
+/*                     END       GRID                         */
+
+.overflow{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 50px;
+  }
+
+  .transparent {
+    background-color: rgb(14, 138, 14);
+    background: transparent;
+    background-image: url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg");
+  }
+
+  .transparent-kid {
+    background: rgba(0, 0, 0, 0.5)
+  }
